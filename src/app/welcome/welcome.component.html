@@ -1,0 +1,14 @@
+<div>
+  Welcome to the App!!
+</div>
+<BR>
+  <div>
+    You can navigate to the App. <a routerLink="/listTodos">here</a>
+</div>
+<div class = "container">
+  <button (click)="getWelcomeMessage()" class="btn btn-success">Get Welcome Messsage</button>
+</div>
+<div class="container" *ngIf="welcomeMessageFromService">
+  <H2>Your customized welcome message</H2>
+  {{welcomeMessageFromService}}
+</div>
